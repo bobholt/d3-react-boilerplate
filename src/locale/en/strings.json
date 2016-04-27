@@ -1,0 +1,7 @@
+{
+  "heading.passing": "NFL QB Passing Stats",
+  "label.xaxis": "X-Axis",
+  "label.yaxis": "Y-Axis",
+  "label.year": "Year",
+  "msg.hello_world": "D3 + React"
+}
