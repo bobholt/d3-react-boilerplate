@@ -44,6 +44,9 @@ export default function bindMethods(thisValue, methodNames) {
   methods
     .filter(isMethod.bind(null, thisValue))
     .forEach(name => {
-      thisValue[name] = thisValue[name].bind(thisValue);
+      // skip methods that already have been bound
+      if (!thisValue.hasOwnProperty(name)) {
+        thisValue[name] = thisValue[name].bind(thisValue);
+      }
     });
 }
