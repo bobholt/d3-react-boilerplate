@@ -19,7 +19,7 @@ import bindMethods from '../util/bind-methods';
 class BaseComponent extends React.Component {
   constructor(props) {
     super(props);
-    bindMethods(this);
+    bindMethods(this, BaseComponent);
   }
 }
 
